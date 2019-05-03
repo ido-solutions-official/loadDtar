@@ -105,5 +105,6 @@ tar = loadDtar(zip_file_path)
 tar.getOneExtract('text.txt','text','utf-8')
 ```
 will output extracted-formatted text in utf-8
+
 `this is a text!!!!`
 
