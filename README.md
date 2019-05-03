@@ -36,10 +36,62 @@ folder
 for example, in your PythonCode.py
 ```
 from loadDtar import loadDtar 
+.
+..
+...
+```
+**Step3** : we are ready to start with `loadDtar` object
+
+```
+.
+..
+...
+zip_file_path = 'file.tar' # could use either relative path or absolute path
+tar = loadDtar(zip_file_path)
+
 ```
 
-and we are ready to use `loadDtar`
+***
+# command list
+## loadDtar(_path_).getHeader()
 
+this function will return all extracted lists in zipped file in numpy array
 
-## 
+```
+zip_file_path = 'file.tar' # could use either relative path or absolute path
+tar = loadDtar(zip_file_path)
 
+tar.getHeader()
+```
+will output
+
+`['image.jpg','text.txt']`
+
+## loadDtar(_path_).getOneExtract(selected,mode=None,_format='utf-8')
+
+this function will extract and return just selected file
+
+* selected : STRING, string of the selected files i.e. 'image.jpg'
+* mode : STRING, Default= None | here is the lists of mode
+    * 'image' : if an image will be extract.
+    * 'text' : if text file will be extract.
+* _format : STRING, _(specified if only mode = 'text')_,Default= 'utf-8', format of the text file after extract i.e. 'utf-8'
+
+```
+zip_file_path = 'file.tar' # could use either relative path or absolute path
+tar = loadDtar(zip_file_path)
+
+tar.getOneExtract('image.jpg','image')
+
+# output extracted numpy array of the image
+[[4,5,6]
+[4,5,7]
+[4,5,8]
+...
+[134,45,95]
+
+tar.getOneExtract('text.txt','text','utf-8')
+
+# output extracted-formatted text in utf-8
+this is a text!!!!
+```
