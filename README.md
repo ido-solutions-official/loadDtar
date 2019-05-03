@@ -1,5 +1,5 @@
 # loadDtar
-load and create dataset from .tar files without extraction
+load and get data from .tar files without full extraction
 
 ## Version Beta 0.1
 compatible zip
