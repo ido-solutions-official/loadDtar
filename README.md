@@ -7,7 +7,7 @@ compatible zip
 * .tgz
 * .tar.gz
 
-requirement : require [g](http://www.google.com)
+require packages : [see require packages](https://github.com/ido-solutions-official/loadDtar/blob/master/require)
 
 
 # How to use
