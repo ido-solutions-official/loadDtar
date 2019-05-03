@@ -67,7 +67,7 @@ will output
 
 `['image.jpg','text.txt']`
 
-## loadDtar(_path_).getOneExtract(__selected,mode=None,_format='utf-8'__)
+## loadDtar(_path_).getOneExtract(_selected,mode=None,format='utf-8'_)
 
 this function will extract and return just selected file
 
@@ -75,7 +75,7 @@ this function will extract and return just selected file
 * mode : STRING, Default= None | here is the lists of mode
     * 'image' : if an image will be extract.
     * 'text' : if text file will be extract.
-* _format : STRING, _(specified if only mode = 'text')_,Default= 'utf-8', format of the text file after extract i.e. 'utf-8'
+* format : STRING, _(specified if only mode = 'text')_,Default= 'utf-8', format of the text file after extract i.e. 'utf-8'
 
 ```
 zip_file_path = 'file.tar' # could use either relative path or absolute path
