@@ -17,11 +17,15 @@ for example, we are working on PythonCode.py, and given folder structure below;
 ```
 folder
 |__file.tar
-    |__ image.jpg
-    |__ text.txt
 |__PythonCode.py
 ```
 
+inside .tar file contain `image.jpg` and `text.txt`
+```
+file.tar
+|__ image.jpg
+|__ text.txt
+```
 **Step1** : clone this git into your folder
 
 just clone this git into your working folder;
@@ -29,8 +33,6 @@ just clone this git into your working folder;
 ```
 folder
 |__file.tar
-    |__ image.jpg
-    |__ text.txt
 |__loadDtar  <-- put it here
 |__PythonCode.py
 ```
