@@ -7,6 +7,8 @@ compatible zip
 * .tgz
 * .tar.gz
 
+requirement : require [g](http://www.google.com)
+
 
 # How to use
 
