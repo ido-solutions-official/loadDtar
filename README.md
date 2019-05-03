@@ -77,6 +77,8 @@ this function will extract and return just selected file
     * 'text' : if text file will be extract.
 * format : STRING, _(specified if only mode = 'text')_,Default= 'utf-8', format of the text file after extract i.e. 'utf-8'
 
+example
+
 ```
 zip_file_path = 'file.tar' # could use either relative path or absolute path
 tar = loadDtar(zip_file_path)
@@ -93,6 +95,9 @@ will output extracted numpy array of the image
 ...
 [134,45,95]
 ```
+
+example
+
 ```
 zip_file_path = 'file.tar' # could use either relative path or absolute path
 tar = loadDtar(zip_file_path)
