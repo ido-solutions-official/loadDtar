@@ -67,7 +67,7 @@ will output
 
 `['image.jpg','text.txt']`
 
-## loadDtar(_path_).getOneExtract(selected,mode=None,_format='utf-8')
+## loadDtar(_path_).getOneExtract(__selected,mode=None,_format='utf-8'__)
 
 this function will extract and return just selected file
 
