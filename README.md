@@ -82,16 +82,23 @@ zip_file_path = 'file.tar' # could use either relative path or absolute path
 tar = loadDtar(zip_file_path)
 
 tar.getOneExtract('image.jpg','image')
+```
 
-# output extracted numpy array of the image
+will output extracted numpy array of the image
+
+```
 [[4,5,6]
 [4,5,7]
 [4,5,8]
 ...
 [134,45,95]
+```
+```
+zip_file_path = 'file.tar' # could use either relative path or absolute path
+tar = loadDtar(zip_file_path)
 
 tar.getOneExtract('text.txt','text','utf-8')
-
-# output extracted-formatted text in utf-8
-this is a text!!!!
 ```
+will output extracted-formatted text in utf-8
+`this is a text!!!!`
+
