@@ -39,7 +39,7 @@ folder
 **Step2** : import files on top of your Python project
 for example, in your PythonCode.py
 ```
-from loadDtar import loadDtar 
+from loadDtar.loadDtar import loadDtar
 .
 ..
 ...
