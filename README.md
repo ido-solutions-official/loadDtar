@@ -1,5 +1,5 @@
 # loadDtar
-load and get data from .tar files without full extraction
+load and get data from zipped files without full extraction
 
 ## Version Beta 0.1
 compatible zip
