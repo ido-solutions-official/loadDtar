@@ -52,8 +52,8 @@ class loadDtar(object):
             elif mode == 'text':
                 txt = b_ext.decode("utf-8")
                 return txt
-            elif mode == 'byte':
-                return b_ext  
+            elif mode == 'raw':
+                return ext 
             elif mode == None:
                 print('Please select decode mode i.e. "image","text" ')
         except Exception as e :
