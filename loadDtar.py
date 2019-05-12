@@ -36,7 +36,7 @@ class loadDtar(object):
         except Exception as e:
             print(e)
             
-    def getOneExtract(self,selected,mode=None,_format='utf-8'):
+    def getOneExtract(self,selected,mode=None):
         '''
         description : get only selected image in numpy array format
         selected : string i.e. 'all_souls_000000.jpg'
@@ -52,6 +52,8 @@ class loadDtar(object):
             elif mode == 'text':
                 txt = b_ext.decode("utf-8")
                 return txt
+            elif mode == 'byte':
+                return b_ext  
             elif mode == None:
                 print('Please select decode mode i.e. "image","text" ')
         except Exception as e :
